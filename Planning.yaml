@@ -1,0 +1,19 @@
+Planning
+
+Goal: Make a program that can determine if an email is spam or not
+
+How?
+
+Training data: provided
+
+Question: How can a spam email be identified? Ideas below
+1. Word usage?
+2. Length?
+3. ???
+
+First steps:
+1. Read and store training data with Java?
+2. Find the differences (start with above) between spam and not spam
+3. Program something concrete based on these differences that takes individual emails and determines if
+    they are spam.
+4. Profit?
