@@ -1,12 +1,14 @@
 Where it is currently:
 
 I've (Colin) created the classes to process and store our trainingData:
-1. Email class - stores the contents of an email as a string, can be updated for more functionality later if needed
+1. Email class - stores the contents of an email as a string, can be updated for more 
+    functionality later if needed
 2. abstract class DataSet - Stores an ArrayList of Email objects.
 3. TrainingData class - extends DataSet, adds the ability to store whether the emails
     are spam or not.
 4. MailReader class - an empty object, with a method that will read a scanner to
-    initialize and return a TrainingData object.
+    initialize and return a TrainingData object. Important to remember that the
+    first line will not be skipped, and failure to do so before the 
 
 
 What still needs to be done:
