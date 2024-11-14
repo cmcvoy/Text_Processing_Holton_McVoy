@@ -6,7 +6,7 @@ Let's make a Java package (call it like filter or something?)
 
 1. Email: type class
     a. Store content in a string
-2. DataSet: interface?
+2. DataSet: abstract class?
 3. TrainingData: class that stores our emails (and whether they are spam)
     a. Store emails in ArrayList<Email>
     b. Store type (spam or not spam) in ArrayList<Boolean>
