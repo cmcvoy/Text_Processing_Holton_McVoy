@@ -14,7 +14,7 @@ public class TrainingData extends DataSet {
      * @param isSpam - an ArrayList of Booleans. Indexes MUST match those in data. (true if spam)
      */
     public TrainingData(ArrayList<Email> data, ArrayList<Boolean> isSpam) {
-        super.emails = data;
+        super(data);
         this.spam = isSpam;
     }
 
