@@ -17,4 +17,18 @@ What still needs to be done:
     type (spam or not spam)
 3. Test these results, and determine accuracy
 4. ???
-5. Profit
+5. Profit! :)
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+I've been looking at spam filters and seeing the examples of what they do to filter out emails. 
+The first filter is word length, such as filtering out singular words that have 20+ characters, 
+since they are usually just a keyboard spam. Ex from the data: gjlNUMBERyjqfsowumqzqlkkutx
+The second filter they have is repition of a word multiple times in the same email.
+The third is filtering out emails that would have a unusual amount of words, like an email with
+only 2 words or an email with 200 words, so we would need to find a good minimum/maximum word count.
+I have also seen methods that filter out emails with common scam words like "free" or "prize", but
+I think the first three would yield better results.
+
+I have some pseudocode at the moment but I would like to know your thoughts about the filtering methods.
+
+-Geras 
