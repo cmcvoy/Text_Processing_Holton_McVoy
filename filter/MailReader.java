@@ -38,6 +38,7 @@ public class MailReader {
             emails.add(new Email(currentEmail[0]));
             spam.add((Boolean)currentEmail[1].equals("1"));
         }
+        sc.close();    //close scanner
         return new TrainingData(emails, spam);
     }
 }
