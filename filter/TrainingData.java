@@ -25,8 +25,8 @@ public class TrainingData extends DataSet {
      */
     public Email getEmail(int index) {
         //if (index < 0 || index >= super.emails.size()){ 
-        //throw new IndexOutOfBoundsException("Index out of range: " + index);    //commented out but can be used if there is an out of bounds problem
-        //}
+        //throw new IndexOutOfBoundsException("Out of range: " + index);    //commented out but can be used if there is an out of bounds problem
+        //} 
         return super.emails.get(index);
     }
 
