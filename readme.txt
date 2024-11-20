@@ -32,3 +32,23 @@ I think the first three would yield better results.
 I have some pseudocode at the moment but I would like to know your thoughts about the filtering methods.
 
 -Geras 
+
+________________________________________________________________
+
+Those ideas sound great. The first three sound like they would probably be more likely to yield good 
+results on their own, while the last one may be useful if we wanted to go for a system that checks how
+many different filters are tripped, though I'd probably save something like that for if just checking for
+any of them turns out to be wildly inaccurate or something.
+
+For the character limit, I'd probably ignore any words that are just underscores (_) since those seem to 
+just represent redacted text, and might cause a lot of false positives otherwise.
+
+As for the word repetition, were you thinking unique repeated words, or how many times any word is repeated?
+Also, since there are a lot of words that are common to repeat regardless, it may be good to either exclude
+very common words (a, an, the, etc.) or to set a minimum threshold.
+
+Anywho, just some thoughts that you've probably already considered, but I just wanted to get them out there
+for when implementing. I'm glad you made more headway in the research department than I did, since I was
+getting a bit stuck.
+
+-Colin
