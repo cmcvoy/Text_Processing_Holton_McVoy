@@ -52,3 +52,9 @@ for when implementing. I'm glad you made more headway in the research department
 getting a bit stuck.
 
 -Colin
+
+---------
+
+For the word repitition I agree that we should skip common words. I am looking at examples of implementation. 
+
+-Geras
