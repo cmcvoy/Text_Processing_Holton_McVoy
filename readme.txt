@@ -58,3 +58,33 @@ getting a bit stuck.
 For the word repitition I agree that we should skip common words. I am looking at examples of implementation. 
 
 -Geras
+
+----------
+you can ignore i'm just jotting stuff down
+
+IDEAS FOR WORD LENGTH: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+while (_____.hasNext()) { //while there is another email, can be removed (___ is a placeholder)
+String word = ______.next(); //go to next email
+if (word.length() >= 20) { //if length of word is over 20 remove it
+_______.remove(); 
+}
+}
+
+!!!!!!
+I am not sure how comfortable you are with streams, I have very limited experience with them.
+!!!!!!
+
+import java.util.ArrayList; 
+import java.util.List; 
+import java.util.stream.Collectors;
+
+List<String> _____________ = words.stream()         //more streamlined version to remove words with over a length of 20 characters
+                                  .filter(word -> word.length() < 20)    //remove words
+                                  .collect(Collectors.toList());    //add to list
+
+
+
+
+
+-Geras
