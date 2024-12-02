@@ -106,6 +106,7 @@ filtered.add(email);
 
 EX 2:
 A longer but more cohesive method, will have to be altered to mesh with code
+also will try and integrate your underscore idea since many of the emails do seem to have a lot of those
 
 public static int Counter(String text) { 
 if (text == null || email.isEmpty()) { //if empty return 0 word count
