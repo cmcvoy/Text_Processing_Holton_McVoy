@@ -62,7 +62,12 @@ For the word repitition I agree that we should skip common words. I am looking a
 ----------
 you can ignore i'm just jotting stuff down
 
-IDEAS FOR WORD LENGTH: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+also some are a bit broken and need tweaking to certain names or methods in the actual program, 
+there are also a couple different methods for each since one may work better over another for what we are trying to do
+
+IDEAS FOR WORD CHARACTER LENGTH: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+EX 1:
 
 while (_____.hasNext()) { //while there is another email, can be removed (___ is a placeholder)
 String word = ______.next(); //go to next email
@@ -75,6 +80,8 @@ _______.remove();
 I am not sure how comfortable you are with streams, I have very limited experience with them.
 !!!!!!
 
+EX 2:
+
 import java.util.ArrayList; 
 import java.util.List; 
 import java.util.stream.Collectors;
@@ -83,8 +90,46 @@ List<String> _____________ = words.stream()         //more streamlined version t
                                   .filter(word -> word.length() < 20)    //remove words
                                   .collect(Collectors.toList());    //add to list
 
+IDEAS FOR WORD COUNT: !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+public int WordAmount() { 
+return email.split("\\s+").length; //the "\\s+" is meant to split the amount of words without counting the spaces, can also be done other ways but this seems to be the simplest
+}
+List<String> emails = new ArrayList<>();    //unfiltered email list
+List<String> filtered = new ArrayList<>();    //filtered email list
+int wordCount = email.WordAmount(); // if word count is between 2 and 200 add to filtered list
+if (wordCount >= 2 && wordCount <= 200) {    //also word count can be between any two numbers these are just examples, feel free to change the amount to what you feel is a good number
+filtered.add(email); 
+} 
+}
 
 
+EX 2:
+A longer but more cohesive method, will have to be altered to mesh with code
 
+public static int Counter(String text) { 
+if (text == null || email.isEmpty()) { //if empty return 0 word count
+return 0; 
+} 
+int wordCount = 0; //base of 0 words
+boolean word = false; //many examples used booleans instead of ints
+int end = email.length() - 1; 
+char[] chars = email.toCharArray(); 
+for (int i = 0; i < chars.length; i++) { // check if the character is valid
+if (Character.isLetter(chars[i]) && i != end){ 
+word = true; 
+} 
+else if (!Character.isLetter(chars[i]) && word){ 
+wordCount++; 
+word = false; 
+} 
+else if (Character.isLetter(chars[i]) && i == end){ 
+wordCount++; 
+} 
+} 
+return wordCount; 
+} 
+}
 
+I will continue to keep looking for methods and hope your break has been good so far!
 -Geras
