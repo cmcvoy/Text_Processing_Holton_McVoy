@@ -134,3 +134,11 @@ return wordCount;
 
 I will continue to keep looking for methods and hope your break has been good so far!
 -Geras
+
+
+
+To Do:
+
+Split between SPAM and HAM first.
+
+Then incorperate methods.
